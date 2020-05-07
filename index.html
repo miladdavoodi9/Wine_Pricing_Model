@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+</head>
+  <body onload="myFunction()" style="margin:auto;">
+    <div id="loader" class="two">
+      <span></span>
+    </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <h2>Wine Prediction Application</h2>
+      <p>Input variables to predict the value of your wine!</p>
+      <p>
+        <form action="/action_page.php">
+          <label for="country">Country:</label><br>
+          <input type="text" id="country" name="country" value="US"><br>
+          <label for="province">Province:</label><br>
+          <input type="text" id="province" name="province" value="Michigan"><br>
+          <label for="region">Region:</label><br>
+          <input type="text" id="region" name="region" value="Lake Michigan Shore"><br>
+          <label for="variety">Variety:</label><br>
+          <input type="text" id="variety" name="variety" value="Riesling"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </p>
+
+    </div>
+    <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+  </body>
+</html>

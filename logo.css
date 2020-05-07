@@ -1,0 +1,106 @@
+/* Wine Glass Animation Start*/
+#loader {
+  height: 50px;
+  width: 50px;
+  border: solid 5px #000;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20% 50%;
+}
+#loader:before {
+  height: 100%;
+  width: 1px;
+  background: #000;
+  content: '';
+  display: block;
+  left: 43%;
+  top: 100%;
+  position: absolute;
+
+}
+#loader:after {
+  height: 100%;
+  width: 40px;
+  height: 1px;
+  background: #000;
+  content: '';
+  display: block;
+  left: 48%;
+  margin-left: -22px;
+  top: 100px;
+  position: absolute;
+}
+.two {
+  border-width: 6px;
+  border-radius: 5px 5px 50% 50%;
+  border: solid 5px #000;
+}
+.two:before {
+  width: 6px;
+  margin-left: 20% 50%;
+  border: solid #000;
+}
+.two:after {
+  height: 6px;
+  border-radius: 6px;
+  border: solid #000;
+}
+span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #8B0000;
+  width: 100%;
+  border: 6px #000;
+  border-top: none;
+  -webkit-animation: fillGlass 6s infinite;
+  animation: fillGlass 6s infinite;
+  border-radius: 0 0 50px 50px;
+}
+@-webkit-keyframes fillGlass {
+  0% {
+    height: 25px;
+  }
+  50% {
+    height: 46px;
+    }
+  100% {
+    height: 25px;
+  }
+}
+@keyframes fillGlass {
+  0% {
+    height: 25px;
+  }
+  50% {
+    height: 46px;
+    }
+  100% {
+    height: 25px;
+  }
+}
+/* Wine Glass Animation Finish*/
+/* Add animation to "page content" */
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
