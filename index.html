@@ -5,29 +5,76 @@
 <style>
 </style>
 <title>Page Title</title>
-<link rel="stylesheet" type="text/css" href="css/logo.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
+<!-- Loading Animation -->
   <body onload="myFunction()" style="margin:auto;">
     <div id="loader" class="two">
       <span></span>
     </div>
+    <!-- Animation of Page Entrance -->
     <div style="display:none;" id="myDiv" class="animate-bottom">
-      <h2>Wine Prediction Application</h2>
-      <p>Input variables to predict the value of your wine!</p>
-      <p>
+      <!-- All page structure below -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="card text-white bg-warning mb-3">
+        <div class="card-header">Wine Prediction Application</div>
+        <div class="card-body">
+          <h4 class="card-title">Input variables to predict the value of your wine!</h4>
+          <p class="card-text">
         <form action="/action_page.php">
-          <label for="country">Country:</label><br>
-          <input type="text" id="country" name="country" value="US"><br>
-          <label for="province">Province:</label><br>
-          <input type="text" id="province" name="province" value="Michigan"><br>
-          <label for="region">Region:</label><br>
-          <input type="text" id="region" name="region" value="Lake Michigan Shore"><br>
-          <label for="variety">Variety:</label><br>
-          <input type="text" id="variety" name="variety" value="Riesling"><br><br>
+          <div class="panel panel-primary">
+            <div class="well">
+              <h5>Rating</h5>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+          <br>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="country">Country:</label>
+            <input type="text" id="country" name="country" value="US">
+            <div class="valid-feedback">Available Input.</div>
+          </div>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="country">Province:</label>
+            <input type="text" id="country" name="country" value="Illinois">
+            <div class="valid-feedback">Available Input.</div>
+          </div>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="country">Region:</label>
+            <input type="text" id="country" name="country" value="Chicago">
+            <div class="valid-feedback">Available Input.</div>
+          </div>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="country">Variety:</label>
+            <input type="text" id="country" name="country" value="Riesling">
+            <div class="valid-feedback">Available Input.</div>
+          </div>
           <input type="submit" value="Submit">
         </form>
       </p>
-
+      </p>
+    </div>
+  </div>
     </div>
     <script>
     var myVar;
@@ -39,6 +86,7 @@
       document.getElementById("myDiv").style.display = "block";
     }
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
