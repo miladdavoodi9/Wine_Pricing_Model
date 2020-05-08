@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 </style>
-<title>Page Title</title>
+<title>Wine Price Prediction - Machine Learning</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <!-- Loading Animation -->
@@ -16,14 +16,14 @@
     <div style="display:none;" id="myDiv" class="animate-bottom">
       <!-- All page structure below -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Wine Bar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -32,7 +32,7 @@
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="Pages\Data_Page.html">About the Data</a>
             </li>
           </ul>
         </div>
@@ -42,34 +42,34 @@
         <div class="card-body">
           <h4 class="card-title">Input variables to predict the value of your wine!</h4>
           <p class="card-text">
-        <form action="/action_page.php">
-          <div class="panel panel-primary">
-            <div class="well">
-              <h5>Rating</h5>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <div id="error"></div>
+        <form id="form" action="/" method="get">
+          <div class="form-group has-success">
+            <label class="form-control-label" for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" placeholder="80" min="80" max="100">
+            <button onClick="validateRating()">Check</button>
           </div>
-          <br>
           <div class="form-group has-success">
             <label class="form-control-label" for="country">Country:</label>
-            <input type="text" id="country" name="country" value="US">
-            <div class="valid-feedback">Available Input.</div>
+            <input type="text" id="country" placeholder="US">
+            <button onclick="validateCountry()">Check</button>
           </div>
           <div class="form-group has-success">
-            <label class="form-control-label" for="country">Province:</label>
-            <input type="text" id="country" name="country" value="Illinois">
-            <div class="valid-feedback">Available Input.</div>
+            <label class="form-control-label" for="province">Province:</label>
+            <input type="text" id="province" placeholder="Illinois">
+            <button onclick="validateProvince()">Check</button>
           </div>
           <div class="form-group has-success">
-            <label class="form-control-label" for="country">Region:</label>
-            <input type="text" id="country" name="country" value="Chicago">
-            <div class="valid-feedback">Available Input.</div>
+            <label class="form-control-label" for="region">Region:</label>
+            <input type="text" id="region" placeholder="Chicago">
+            <button onclick="validateRegion()">Check</button>
           </div>
           <div class="form-group has-success">
-            <label class="form-control-label" for="country">Variety:</label>
-            <input type="text" id="country" name="country" value="Riesling">
-            <div class="valid-feedback">Available Input.</div>
+            <label class="form-control-label" for="variety">Variety:</label>
+            <input type="text" id="variety" placeholder="Riesling">
+            <button onclick="validateVariety()">Check</button>
           </div>
-          <input type="submit" value="Submit">
+          <!-- <input type="submit" value="Submit"> -->
         </form>
       </p>
       </p>
@@ -81,12 +81,22 @@
     function myFunction() {
       myVar = setTimeout(showPage, 3000);
     }
+    function validateRating() {
+    }
+    function validateCountry() {
+    }
+    function validateProvince() {
+    }
+    function validateRegion() {
+    }
+    function validateVariety() {
+    }
     function showPage() {
       document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script src="app.js"></script>
+    <script src="static/app.js"></script>
   </body>
 </html>
