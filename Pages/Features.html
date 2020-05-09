@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+<title>Wine Price Prediction - Machine Learning</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<!-- Loading Animation -->
+  <body onload="myFunction()" style="margin:auto;">
+    <div id="loader" class="two">
+      <span></span>
+    </div>
+    <!-- Animation of Page Entrance -->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <!-- All page structure below -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wine Bar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data_Page.html">About the Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <h1>Wine Cloud</h1>
+        <article>
+        <a target="_blank" href="wine_cloud.png">
+          <img src="wine_cloud.png" alt="Wine Cloud" height="750">
+        </a>
+        <p>We created a word cloud of the wine descriptions so we could see which terms were most prevalent when describing the different wines.</p>
+        </article>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section>
+          <h1>Countries</h1>
+          <article>
+          <a target="_blank" href="countries.png">
+            <img src="countries.png" alt="Countries" height="750">
+          </a>
+          <p>The US offers the most bottles by far with Italy and France being the natural next biggest producers.</p>
+          </article>
+          </section>
+          <br>
+          <br>
+          <br>
+          <section>
+            <h1>Wineries</h1>
+            <article>
+            <a target="_blank" href="map.png">
+              <img src="map.png" alt="Countries" height="750">
+            </a>
+            <p>The US also has the most wineries in the world.</p>
+            </article>
+            </section>
+  </div>
+    </div>
+    <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="../static/app.js"></script>
+  </body>
+</html>
