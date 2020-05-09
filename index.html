@@ -26,10 +26,10 @@
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="Pages\Features.html">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="Pages\Pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Pages\Data_Page.html">About the Data</a>
@@ -43,59 +43,40 @@
           <h4 class="card-title">Input variables to predict the value of your wine!</h4>
           <p class="card-text">
         <div id="error"></div>
-        <form id="form" action="/" method="get">
+        <form id="form" action="#" method="get">
           <div class="form-group has-success">
             <label class="form-control-label" for="rating">Rating:</label>
-            <input type="number" id="rating" name="rating" placeholder="80" min="80" max="100">
-            <button onClick="validateRating()">Check</button>
+            <input type="number" id="rating" name="rating" placeholder="80">
+            <button onclick="validateRating();return false;">Check</button>
           </div>
           <div class="form-group has-success">
             <label class="form-control-label" for="country">Country:</label>
             <input type="text" id="country" placeholder="US">
-            <button onclick="validateCountry()">Check</button>
+            <button onclick="validateCountry();return false;">Check</button>
           </div>
           <div class="form-group has-success">
             <label class="form-control-label" for="province">Province:</label>
             <input type="text" id="province" placeholder="Illinois">
-            <button onclick="validateProvince()">Check</button>
+            <button onclick="validateProvince();return false;">Check</button>
           </div>
           <div class="form-group has-success">
             <label class="form-control-label" for="region">Region:</label>
             <input type="text" id="region" placeholder="Chicago">
-            <button onclick="validateRegion()">Check</button>
+            <button onclick="validateRegion();return false;">Check</button>
           </div>
           <div class="form-group has-success">
             <label class="form-control-label" for="variety">Variety:</label>
             <input type="text" id="variety" placeholder="Riesling">
-            <button onclick="validateVariety()">Check</button>
+            <button onclick="validateVariety();return false;">Check</button>
           </div>
-          <!-- <input type="submit" value="Submit"> -->
+          <input type="submit" value="Submit">
         </form>
       </p>
       </p>
     </div>
+    <p>We decided to look at the Wine Enthusiast ratings data set and try to see if we could predict anything about wine using variables like price, rating, country, etc.</p>
   </div>
     </div>
-    <script>
-    var myVar;
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    function validateRating() {
-    }
-    function validateCountry() {
-    }
-    function validateProvince() {
-    }
-    function validateRegion() {
-    }
-    function validateVariety() {
-    }
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="static/app.js"></script>
   </body>
