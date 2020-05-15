@@ -7,4 +7,4 @@ Objective:
   - Analysize the various different types of wines, where they were made, the winery, the taster, etc. and see if we can find trends with location, taster, type of wine, the rated points by the sommolier, and price
   
 Inspiration:
-  - with all of these attributes, are we able to confiedently predict a cost of wine based on these various attributes?
+  - With all of these attributes, are we able to confiedently predict a cost of wine based on these various attributes?
