@@ -20,3 +20,4 @@ Machine Learning:
   ![](images/Country_vs_Price.png)
   ![](images/Points_vs_Price.png)
   ![](images/Taster_vs_Price.png)
+  ![](images/Region_vs_Price.png)
