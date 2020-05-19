@@ -18,8 +18,8 @@ Files:
 Machine Learning: 
   - All data organization, table creation, and basic plots to understand any correlations with data
   - Country vs Price
-    ![](images/Country_vs_Price.png)
+  ![](images/Country_vs_Price.png)
   - Points vs Price
-    ![](images/Points_vs_Price.png)
+  ![](images/Points_vs_Price.png)
   - Taster vs Price
-    ![](images/Taster_vs_Price.png)
+  ![](images/Taster_vs_Price.png)
