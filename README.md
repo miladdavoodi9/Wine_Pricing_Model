@@ -14,3 +14,12 @@ Files:
       - Exploring and analyzing data. Getting to know it intimiately before building Model.
   - wine_ML_model.ipynb 
       - Jupyter Notebook shows machine learning model used with analysis
+
+Machine Learning: 
+  - All data organization, table creation, and basic plots to understand any correlations with data
+  - Country vs Price
+  - ![](images/Country_vs_Price.png)
+  - Points vs Price
+  - ![](images/Points_vs_Price.png)
+  - Taster vs Price
+  - ![](images/Taster_vs_Price.png)
