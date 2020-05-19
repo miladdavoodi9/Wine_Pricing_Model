@@ -27,4 +27,4 @@ Files:
   ![](images/ML_Points_vs_Price_histo.png)
   ![](images/ML_Price_transformed_histo.png)
   - Pursue models now that our price is normally distributed
-  - 
+  ![](images/ML_residual_plot.png)
