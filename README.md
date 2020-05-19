@@ -24,7 +24,7 @@ Files:
   ![](images/Region_vs_Price.png)
   - Many of the attributes that seem to have a correlation with price, are string values. Since they are non-numerical, we need to encode those string values into an array of numerical values. In order to do this, we can either use OneHotEncoding or Pandas get_dummies
   - Plot histogram of price column. We see that the data is psoitively skewed. Using a Box-cox log transformaion should get our data to be more normally distributed to create the model.
+  - Pursue models now that our price is normally distributed
   ![](images/ML_Points_vs_Price_histo.png)
   ![](images/ML_Price_transformed_histo.png)
-  - Pursue models now that our price is normally distributed
   ![](images/ML_residual_plot.png)
