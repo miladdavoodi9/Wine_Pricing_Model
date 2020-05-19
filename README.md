@@ -9,4 +9,6 @@ Objective:
 Inspiration:
   - With all of these attributes, are we able to confiedently predict a cost of wine based on these various attributes?
 
-ML Jupyter Notebook shows machine learning model used with analysis (ML.ipynb)
+Files:
+  - data_exploration.ipynb: Exploring and analyzing data. Getting to know it intimiately before building Model.
+  - wine_ML_model.ipynb Jupyter Notebook shows machine learning model used with analysis
